@@ -1,0 +1,16 @@
+
+<div class="index">
+  <h2 class="title">採点一覧</h2>
+
+  <ul class="">
+    <% tests.each do |test| %>
+      <li>
+        <%= link_to test do %>
+          <%= test.id %> : <%= test.title %>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+
+  <%= link_to '新規テストの入力', new_test_path, class: 'btn-border-submit' %>
+<div>

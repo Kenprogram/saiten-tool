@@ -1,2 +1,14 @@
-<h1>Tests#new</h1>
-<p>Find me in app/views/tests/new.html.erb</p>
+<div class="index">
+  <%= form_with(model: @test, lacal: true) do |f|%>
+    <div class="cp_iptxt">  
+      <%= f.label :title, "タイトル", class:"input_ef" %>
+      <%= f.text_field :title, class:"input_ef"  %>
+    </div>
+    
+    <%= f.submit "保存",class:"btn-border-submit" %>
+    <span class="mrg-l-25">
+      <%= link_to "一覧に戻る", tests_path,class:"btn-border-back" %>
+    </span>
+  <% end %>
+
+</div>

@@ -1,2 +1,8 @@
-<h1>Tests#show</h1>
-<p>Find me in app/views/tests/show.html.erb</p>
+<div class="index">
+  <h2 class="title">
+    <%= @test.id %> ： <%= @test.title %>の解答
+  </h2>
+  <div>hogehoge</div>
+
+  <%= link_to "一覧に戻る", tests_path %>
+</div>

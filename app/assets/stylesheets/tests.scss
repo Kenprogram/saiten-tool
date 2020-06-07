@@ -1,3 +1,152 @@
 // Place all the styles related to the tests controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ,
+    Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #e6e6e6;
+}
+
+header {
+  width: 100%;
+  padding: 30px 4% 10px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #4b4b4b;
+}
+
+ul {
+  list-style: none;
+}
+
+form {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+// class
+
+.container {
+  padding-top: 85px;
+  background-color: #fff;
+  width: 80%;
+  margin: auto;
+}
+
+.index {
+  margin-top: -85px;
+  padding-top: 85px;
+}
+
+.title {
+  color: #4b4b4b;
+  position: relative;
+  display: inline-block;
+  padding: 0 55px;
+}
+.title:before,
+.title:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 45px;
+  height: 1px;
+  background-color: black;
+}
+.title:before {
+  left: 0;
+}
+.title:after {
+  right: 0;
+}
+
+.test-id {
+}
+
+.cp_iptxt {
+  position: relative;
+  display: inline-block;
+  margin: 40px 3%;
+}
+.cp_iptxt input[type="text"] {
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.3em;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  color: #aaaaaa;
+  border: 1px solid #1b2538;
+  border-radius: 4px;
+}
+.input-ef input[type="text"]:focus {
+  border: 1px solid #da3c41;
+  outline: none;
+  box-shadow: 0 0 5px 1px rgba(218, 60, 65, 0.5);
+}
+
+.btn-border-submit {
+  display: inline-block;
+  max-width: 180px;
+  text-align: left;
+  border: 2px solid #9ec34b;
+  font-size: 16px;
+  color: #9ec34b;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: 0.4s;
+}
+
+.btn-border-submit:hover {
+  background-color: #9ec34b;
+  border-color: #cbe585;
+  color: #fff;
+}
+
+.btn-border-back {
+  display: inline-block;
+  max-width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #4b4b4b;
+  font-size: 16px;
+  color: #4b4b4b;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: 0.4s;
+}
+
+.btn-border-back:hover {
+  background-color: #4b4b4b;
+  border-color: #4b4b4b;
+  color: #fff;
+}
+
+.mrg-l-25 {
+  margin-left: 25px;
+}
